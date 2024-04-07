@@ -1,0 +1,118 @@
+[
+    {
+        "table": "title",
+        "rows": 2528312,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "kind_id",
+                "type": "integer"
+            },
+            {
+                "name": "production_year",
+                "type": "integer"
+            }
+        ]
+    },
+    {
+        "table": "movie_companies",
+        "rows": 2609129,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "company_id",
+                "type": "integer"
+            },
+            {
+                "name": "movie_id",
+                "type": "integer"
+            },
+            {
+                "name": "company_type_id",
+                "type": "integer"
+            }
+        ]
+    },
+    {
+        "table": "cast_info",
+        "rows": 36244344,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "movie_id",
+                "type": "integer"
+            },
+            {
+                "name": "person_id",
+                "type": "integer"
+            },
+            {
+                "name": "role_id",
+                "type": "integer"
+            }
+        ]
+    },
+    {
+        "table": "movie_info_idx",
+        "rows": 1380035,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "movie_id",
+                "type": "integer"
+            },
+            {
+                "name": "info_type_id",
+                "type": "integer"
+            }
+        ]
+    },
+    {
+        "table": "movie_info",
+        "rows": 14835720,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "movie_id",
+                "type": "integer"
+            },
+            {
+                "name": "info_type_id",
+                "type": "integer"
+            }
+        ]
+    },
+    {
+        "table": "movie_keyword",
+        "rows": 4523930,
+        "columns": [
+            {
+                "name": "id",
+                "type": "integer"
+            },
+            {
+                "name": "movie_id",
+                "type": "integer"
+            },
+            {
+                "name": "keyword_id",
+                "type": "integer"
+            }
+        ]
+    }
+]
