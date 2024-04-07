@@ -1,0 +1,501 @@
+,db_id,original_sql
+1,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id>2 AND t.production_year>2010 AND mi_idx.info_type_id=99;"
+2,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id<45851 AND mi.info_type_id=16;"
+3,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id<1798117 AND ci.role_id>1 AND mi_idx.info_type_id=101;"
+4,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year<1996 AND mi.info_type_id=3;"
+5,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.production_year<2009 AND ci.role_id=6;"
+6,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year=1992 AND ci.person_id<3750295;"
+7,job,SELECT * FROM cast_info ci WHERE ci.person_id>2583195 AND ci.role_id=3;
+8,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>11145 AND mc.company_type_id=1;"
+9,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id=3 AND t.production_year=1997 AND ci.person_id>386835 AND ci.role_id=1;"
+10,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year=2008 AND mi_idx.info_type_id<100;"
+11,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=7 AND mc.company_type_id=1 AND ci.person_id<3978504;"
+12,job,SELECT * FROM movie_companies mc WHERE mc.company_id>14922;
+13,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mk.keyword_id<1382;"
+14,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year<1990 AND ci.person_id<1289678 AND ci.role_id<2 AND mk.keyword_id=3521;"
+15,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.production_year<2010 AND mi.info_type_id<13;"
+16,job,SELECT * FROM cast_info ci WHERE ci.person_id>252027 AND ci.role_id>3;
+17,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mi.info_type_id>16 AND mk.keyword_id=10104;"
+18,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=2008 AND mk.keyword_id>1;"
+19,job,SELECT * FROM cast_info ci WHERE ci.person_id>1347087;
+20,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.production_year>1999 AND ci.person_id=1164479 AND ci.role_id=1;"
+21,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND mc.company_id<20235;"
+22,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year>0 AND mi_idx.info_type_id<101 AND mk.keyword_id<16264;"
+23,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND mc.company_id=11264 AND mc.company_type_id=2 AND ci.role_id=1;"
+24,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id=2907675 AND ci.role_id>1;"
+25,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id=9174;"
+26,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.person_id>2071795 AND ci.role_id<8;"
+27,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id=1396 AND mc.company_type_id=1 AND mi_idx.info_type_id>100;"
+28,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id=52;"
+29,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.person_id=3311036 AND ci.role_id>3;"
+30,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mk.keyword_id>6960;"
+31,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year<1997 AND ci.person_id>2557075 AND ci.role_id>1;"
+32,job,SELECT * FROM movie_companies mc WHERE mc.company_id>10295 AND mc.company_type_id=1;
+33,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id<459 AND mi.info_type_id<8;"
+34,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year>2008 AND ci.person_id<2062618 AND ci.role_id=3;"
+35,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>3519621 AND ci.role_id>1;"
+36,job,SELECT * FROM title t WHERE t.kind_id<4 AND t.production_year=1941;
+37,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.production_year<1973 AND mc.company_type_id<2 AND mi.info_type_id<2;"
+38,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id<1498 AND mc.company_type_id<2;"
+39,job,SELECT * FROM movie_companies mc WHERE mc.company_id=88364;
+40,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=3 AND t.production_year=2006 AND mc.company_type_id>1;"
+41,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id=578700 AND ci.role_id=1;"
+42,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id>1 AND t.production_year>2002 AND mc.company_type_id>1;"
+43,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id<82 AND mc.company_type_id<2 AND mk.keyword_id=793;"
+44,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>1983 AND mk.keyword_id>3639;"
+45,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year=2011 AND ci.person_id>2224539 AND ci.role_id=9;"
+46,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id>4 AND t.production_year>1968;"
+47,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<7 AND t.production_year<1986 AND mi.info_type_id<3;"
+48,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id<8787;"
+49,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id<4 AND mk.keyword_id<12917;"
+50,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year<1912 AND mi.info_type_id<4;"
+51,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id=78330 AND ci.role_id=1;"
+52,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year>1999 AND mk.keyword_id<15867;"
+53,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=2 AND t.production_year>2011 AND mi.info_type_id=16;"
+54,job,SELECT * FROM title t WHERE t.kind_id<4 AND t.production_year=1983;
+55,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year=1993 AND ci.person_id>56020 AND ci.role_id>1 AND mi_idx.info_type_id=100;"
+56,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id>1 AND t.production_year>0 AND mc.company_id=666 AND mc.company_type_id=1 AND mi_idx.info_type_id<100;"
+57,job,SELECT * FROM cast_info ci WHERE ci.person_id>2133508;
+58,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_type_id>1 AND mk.keyword_id<5673;"
+59,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year>2010 AND mi.info_type_id>4;"
+60,job,SELECT * FROM movie_companies mc WHERE mc.company_id=1700;
+61,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year>2000 AND mk.keyword_id<9713;"
+62,job,SELECT * FROM movie_companies mc WHERE mc.company_id>19261;
+63,job,SELECT * FROM cast_info ci WHERE ci.person_id<874165 AND ci.role_id=2;
+64,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>2 AND mk.keyword_id<2158;"
+65,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mi.info_type_id=71 AND mk.keyword_id=4886;"
+66,job,SELECT * FROM cast_info ci WHERE ci.person_id<1501643;
+67,job,SELECT * FROM movie_companies mc WHERE mc.company_id<169;
+68,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year>1998 AND ci.person_id<2632798;"
+69,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year<2013 AND mc.company_id>11690;"
+70,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>72745;
+71,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=1376;
+72,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id<100309 AND mc.company_type_id=1;"
+73,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>2011 AND mi_idx.info_type_id<101;"
+74,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id=20531;"
+75,job,SELECT * FROM cast_info ci WHERE ci.person_id>3685269 AND ci.role_id>10;
+76,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year=1997;"
+77,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND mc.company_id<264 AND mc.company_type_id=1 AND mi_idx.info_type_id>101;"
+78,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id=887764 AND mi_idx.info_type_id=100;"
+79,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id=7 AND t.production_year>2007 AND mi.info_type_id>16;"
+80,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=4 AND mc.company_id<4226 AND mc.company_type_id<2 AND mi_idx.info_type_id>99;"
+81,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>1 AND t.production_year>2008 AND mk.keyword_id<1595;"
+82,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND ci.role_id=8 AND mi_idx.info_type_id=101;"
+83,job,SELECT * FROM movie_companies mc WHERE mc.company_id<182961;
+84,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id<7 AND t.production_year>1909 AND ci.person_id<3033660;"
+85,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND mc.company_id>15344 AND mc.company_type_id>1;"
+86,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<1979 AND mk.keyword_id<221;"
+87,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>371;
+88,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year>2002 AND ci.person_id<91254 AND ci.role_id=2;"
+89,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND ci.role_id=5;"
+90,job,SELECT * FROM movie_companies mc WHERE mc.company_id>735;
+91,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year>2010 AND mi.info_type_id=15;"
+92,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<61278;
+93,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year=2010 AND mi_idx.info_type_id>99;"
+94,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_type_id>1 AND mk.keyword_id<17567;"
+95,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id>47258;"
+96,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id<2025 AND mc.company_type_id>1;"
+97,job,SELECT * FROM title t WHERE t.kind_id>3 AND t.production_year>2005;
+98,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.production_year<2013 AND mi.info_type_id>3 AND mk.keyword_id<2879;"
+99,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year<2006 AND mi.info_type_id=4;"
+100,job,SELECT * FROM cast_info ci WHERE ci.person_id=999932 AND ci.role_id=1;
+101,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND ci.person_id>574512 AND ci.role_id=5;"
+102,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id=4 AND t.production_year>1990 AND ci.person_id>2501889 AND ci.role_id>2 AND mi.info_type_id<16;"
+103,job,SELECT * FROM cast_info ci WHERE ci.person_id>3579913 AND ci.role_id>1;
+104,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year=1976;"
+105,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=1983 AND mk.keyword_id>16501;"
+106,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<7 AND t.production_year=2005 AND mc.company_id<81410;"
+107,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.production_year>2000 AND mi_idx.info_type_id>100;"
+108,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year=2007 AND mi_idx.info_type_id>99;"
+109,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND mc.company_id>72919 AND ci.person_id>707872;"
+110,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=3 AND t.production_year>2007 AND mk.keyword_id<79661;"
+111,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>12660;"
+112,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id=72914 AND mc.company_type_id>1;"
+113,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=7 AND mc.company_type_id=1 AND ci.person_id>2624951 AND ci.role_id>10;"
+114,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND mc.company_id<233881 AND mc.company_type_id=1 AND ci.person_id<190941 AND ci.role_id=10;"
+115,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id<2459947 AND ci.role_id=8;"
+116,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id<7 AND t.production_year>0 AND mc.company_id=76885 AND mc.company_type_id=2 AND ci.role_id=10;"
+117,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id=1434 AND mc.company_type_id=1;"
+118,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND ci.person_id<768549 AND mk.keyword_id=5704;"
+119,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>55345;
+120,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND mk.keyword_id<39918;"
+121,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<4 AND t.production_year<2010 AND mi_idx.info_type_id=101;"
+122,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id=4 AND t.production_year>2000;"
+123,job,SELECT * FROM cast_info ci WHERE ci.person_id>330629;
+124,job,SELECT * FROM movie_companies mc WHERE mc.company_id=24031 AND mc.company_type_id=2;
+125,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND mk.keyword_id<14017;"
+126,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.production_year<1978 AND mc.company_id=6655;"
+127,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id<3 AND ci.person_id>2376438 AND mk.keyword_id<12512;"
+128,job,SELECT * FROM movie_companies mc WHERE mc.company_id>9788 AND mc.company_type_id=2;
+129,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year<1983 AND mk.keyword_id=19927;"
+130,job,SELECT * FROM movie_companies mc WHERE mc.company_id=43385 AND mc.company_type_id<2;
+131,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year=2005 AND mi.info_type_id=16;"
+132,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>2 AND mk.keyword_id>989;"
+133,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.production_year<2004 AND mc.company_type_id=2 AND mi_idx.info_type_id=100;"
+134,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id>1 AND t.production_year<2001 AND ci.person_id>3459377;"
+135,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year=1990 AND ci.role_id=2;"
+136,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id<1963275 AND ci.role_id=1;"
+137,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<1909 AND mk.keyword_id>16264;"
+138,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<49490;
+139,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>94486 AND ci.role_id<3;"
+140,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id<7 AND t.production_year>2012 AND mi.info_type_id>98;"
+141,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=2004;"
+142,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND mc.company_id>4870 AND ci.person_id>117361 AND ci.role_id>1;"
+143,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<5889;
+144,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mk.keyword_id<807;"
+145,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.production_year<2012 AND mc.company_type_id<2;"
+146,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND mc.company_id<88113 AND mk.keyword_id=347;"
+147,job,SELECT * FROM movie_companies mc WHERE mc.company_id=711 AND mc.company_type_id<2;
+148,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>33256;
+149,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND mc.company_id<1312 AND mc.company_type_id>1 AND mk.keyword_id>62;"
+150,job,SELECT * FROM movie_companies mc WHERE mc.company_id<47506 AND mc.company_type_id=2;
+151,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id<7 AND t.production_year<1992 AND mk.keyword_id>3629;"
+152,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>1961 AND mk.keyword_id=1066;"
+153,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id=6 AND mk.keyword_id<1603;"
+154,job,SELECT * FROM cast_info ci WHERE ci.person_id>1356569;
+155,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id>27 AND mc.company_type_id=2;"
+156,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year=1959 AND mi.info_type_id<16;"
+157,job,SELECT * FROM movie_companies mc WHERE mc.company_id>437 AND mc.company_type_id>1;
+158,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<4 AND mi.info_type_id>8;"
+159,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>37826;
+160,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>272 AND mc.company_type_id=1;"
+161,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id<150930 AND mi_idx.info_type_id=101;"
+162,job,SELECT * FROM movie_companies mc WHERE mc.company_id<88987 AND mc.company_type_id>1;
+163,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year<2009 AND mi.info_type_id=5 AND mk.keyword_id<77;"
+164,job,SELECT * FROM movie_companies mc WHERE mc.company_id>81045;
+165,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year<2012 AND mi.info_type_id<8 AND mi_idx.info_type_id<100;"
+166,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id>11706 AND mc.company_type_id<2 AND mi.info_type_id<16;"
+167,job,SELECT * FROM cast_info ci WHERE ci.person_id<1642022 AND ci.role_id>4;
+168,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=1984 AND mk.keyword_id=1226;"
+169,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=3 AND t.production_year=1968;"
+170,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND mc.company_id>27 AND ci.person_id=2815171 AND ci.role_id=3;"
+171,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year<2008 AND mi_idx.info_type_id=99;"
+172,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year=1899 AND mi.info_type_id=7;"
+173,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year=2009 AND mi.info_type_id<3;"
+174,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year=2012 AND ci.person_id<2861083 AND ci.role_id>2;"
+175,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.production_year=2005 AND mc.company_id>11378 AND mc.company_type_id=1;"
+176,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>8504;
+177,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year=2002 AND ci.person_id=1858618;"
+178,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=3900;
+179,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND mc.company_id<292 AND mc.company_type_id=2 AND mk.keyword_id>72791;"
+180,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id=3147849 AND ci.role_id>2;"
+181,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id<3 AND t.production_year<1998 AND mk.keyword_id=1512;"
+182,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mk.keyword_id=1198;"
+183,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=35980;
+184,job,SELECT * FROM cast_info ci WHERE ci.person_id>628361 AND ci.role_id<4;
+185,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=4038;
+186,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=1 AND t.production_year<1963 AND mk.keyword_id>25761;"
+187,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<7 AND t.production_year=1997 AND mc.company_id>1427 AND mc.company_type_id>1;"
+188,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id<7 AND ci.person_id>40662;"
+189,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.production_year=1963;"
+190,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>1971 AND mk.keyword_id=3002;"
+191,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id=2123853 AND ci.role_id=2;"
+192,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>9922;
+193,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year=1999 AND mk.keyword_id<7076;"
+194,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year=2009 AND mk.keyword_id=2523;"
+195,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=1 AND t.production_year=2012 AND mk.keyword_id>6014;"
+196,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year=2011 AND ci.role_id<2;"
+197,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id>22;"
+198,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<4 AND t.production_year=2013;"
+199,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>2002 AND mk.keyword_id<310;"
+200,job,SELECT * FROM cast_info ci WHERE ci.person_id>2716666 AND ci.role_id>2;
+201,job,SELECT * FROM movie_companies mc WHERE mc.company_id=15637 AND mc.company_type_id=1;
+202,job,SELECT * FROM cast_info ci WHERE ci.person_id<241356 AND ci.role_id<2;
+203,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>1968 AND ci.person_id<3552809 AND ci.role_id>2 AND mi_idx.info_type_id=100;"
+204,job,SELECT * FROM movie_companies mc WHERE mc.company_id<29863;
+205,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year=2006 AND ci.role_id>1;"
+206,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id>1 AND t.production_year<2010 AND mc.company_id<87719;"
+207,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND mi.info_type_id=61;"
+208,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id<294290;"
+209,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id=7 AND mc.company_id=521;"
+210,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND mc.company_type_id=2 AND mk.keyword_id=52940;"
+211,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year<2013 AND mi.info_type_id<2;"
+212,job,SELECT * FROM movie_companies mc WHERE mc.company_id=56044 AND mc.company_type_id=1;
+213,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year<2004 AND mi_idx.info_type_id<101 AND mk.keyword_id=1116;"
+214,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year<2000 AND mk.keyword_id>62;"
+215,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id<7 AND t.production_year>2005 AND mk.keyword_id<34590;"
+216,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id=7 AND t.production_year=1996;"
+217,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year<2011 AND mi_idx.info_type_id>100;"
+218,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.production_year=1993 AND mi.info_type_id<16;"
+219,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<6016;
+220,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id=1 AND t.production_year<1992;"
+221,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<4 AND t.production_year<2009 AND mc.company_type_id=2;"
+222,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year=1962 AND mk.keyword_id>683;"
+223,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>1945 AND mi.info_type_id<2 AND mk.keyword_id<11436;"
+224,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year>2007 AND mi_idx.info_type_id>101 AND mk.keyword_id>414;"
+225,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<7 AND t.production_year=2001 AND mc.company_type_id=2;"
+226,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=1 AND t.production_year=1972 AND ci.person_id>552659 AND ci.role_id=8;"
+227,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.production_year<2005 AND mi.info_type_id=16 AND mi_idx.info_type_id<101;"
+228,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=1 AND mc.company_id>4657 AND ci.role_id>1;"
+229,job,SELECT * FROM cast_info ci WHERE ci.person_id<3514419;
+230,job,SELECT * FROM cast_info ci WHERE ci.person_id>1991111;
+231,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id>1 AND t.production_year>2011 AND mc.company_id=13794 AND mc.company_type_id<2;"
+232,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=6499;
+233,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.production_year>2006 AND mc.company_id<27030 AND mc.company_type_id>1;"
+234,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=12089;
+235,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>2007 AND mk.keyword_id=16264;"
+236,job,SELECT * FROM movie_companies mc WHERE mc.company_id<3889 AND mc.company_type_id=2;
+237,job,SELECT * FROM cast_info ci WHERE ci.person_id<2521427;
+238,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id=7 AND t.production_year=2001 AND mc.company_id>50752 AND mi.info_type_id=3;"
+239,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id>6 AND mc.company_type_id<2 AND mk.keyword_id>7118;"
+240,job,SELECT * FROM cast_info ci WHERE ci.person_id<1568260 AND ci.role_id>1;
+241,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year=1994 AND ci.person_id>2634633 AND ci.role_id>2;"
+242,job,SELECT * FROM cast_info ci WHERE ci.person_id>957245 AND ci.role_id>1;
+243,job,SELECT * FROM movie_companies mc WHERE mc.company_id<10256 AND mc.company_type_id<2;
+244,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>3285133 AND ci.role_id>8;"
+245,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>2621140 AND ci.role_id<10;"
+246,job,SELECT * FROM cast_info ci WHERE ci.person_id=1658663;
+247,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id<170733 AND mc.company_type_id>1;"
+248,job,SELECT * FROM cast_info ci WHERE ci.person_id<810154 AND ci.role_id=1;
+249,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND mk.keyword_id<2888;"
+250,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id=196516 AND mi.info_type_id>2;"
+251,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id>11203;"
+252,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id=1 AND mc.company_id>9557 AND mc.company_type_id=1;"
+253,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year=2007 AND ci.person_id<1325418 AND ci.role_id=1;"
+254,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id>61757 AND mc.company_type_id<2 AND mi_idx.info_type_id<101;"
+255,job,SELECT * FROM cast_info ci WHERE ci.person_id>582377;
+256,job,SELECT * FROM title t WHERE t.kind_id>2 AND t.production_year>2002;
+257,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year=1974 AND mi_idx.info_type_id<101;"
+258,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<13700;
+259,job,SELECT * FROM cast_info ci WHERE ci.person_id<900749 AND ci.role_id>1;
+260,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<3236;
+261,job,SELECT * FROM cast_info ci WHERE ci.person_id>583692 AND ci.role_id=2;
+262,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mi.info_type_id=7 AND mk.keyword_id=405;"
+263,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>2001 AND mi.info_type_id=16 AND mi_idx.info_type_id=101;"
+264,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year=1988;"
+265,job,SELECT * FROM movie_companies mc WHERE mc.company_id<7103;
+266,job,SELECT * FROM title t WHERE t.production_year=1920;
+267,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id>1682 AND mc.company_type_id=2;"
+268,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND ci.person_id>1113205 AND ci.role_id<2;"
+269,job,SELECT * FROM movie_companies mc WHERE mc.company_id=1190 AND mc.company_type_id=2;
+270,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<1999 AND mk.keyword_id=55124;"
+271,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=6397;
+272,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>107268 AND mc.company_type_id=2;"
+273,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<7 AND t.production_year<2011 AND mc.company_id=995 AND mc.company_type_id=2;"
+274,job,SELECT * FROM cast_info ci WHERE ci.person_id<1576817 AND ci.role_id>1;
+275,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>38304 AND ci.role_id<5;"
+276,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id>3 AND t.production_year<1965 AND mi.info_type_id>7;"
+277,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id<7 AND t.production_year=1941 AND ci.person_id>2772415 AND ci.role_id=3;"
+278,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=2551;
+279,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mi_idx.info_type_id=100 AND mk.keyword_id<9326;"
+280,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=1 AND t.production_year=2004 AND mk.keyword_id=20869;"
+281,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>41922;
+282,job,SELECT * FROM cast_info ci WHERE ci.person_id>91035 AND ci.role_id=1;
+283,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id=1 AND t.production_year=1987 AND mc.company_id<265;"
+284,job,SELECT * FROM cast_info ci WHERE ci.person_id>1033058 AND ci.role_id=10;
+285,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id<2468;"
+286,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND mk.keyword_id<21183;"
+287,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=2008 AND ci.person_id>1352097;"
+288,job,SELECT * FROM cast_info ci WHERE ci.person_id=1722286;
+289,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<7 AND t.production_year=1967 AND mi.info_type_id<17;"
+290,job,SELECT * FROM movie_companies mc WHERE mc.company_id>17859;
+291,job,SELECT * FROM cast_info ci WHERE ci.person_id>508223 AND ci.role_id>1;
+292,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id<3 AND t.production_year<2004;"
+293,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>2011 AND mk.keyword_id>15689;"
+294,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id<3650956 AND ci.role_id>2;"
+295,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<16195;
+296,job,SELECT * FROM cast_info ci WHERE ci.person_id=797238;
+297,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.production_year<1971 AND mi.info_type_id<8;"
+298,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year<1972 AND ci.person_id<1803427 AND ci.role_id=1;"
+299,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<84048;
+300,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<78628;
+301,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<2013 AND mk.keyword_id<1312;"
+302,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.production_year>2007 AND mi.info_type_id<2;"
+303,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.production_year=2009 AND ci.person_id>2812597;"
+304,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mk.keyword_id=8177;"
+305,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=2411;
+306,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year=1994 AND mk.keyword_id=3658;"
+307,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>1666;
+308,job,SELECT * FROM cast_info ci WHERE ci.person_id<2535894 AND ci.role_id>10;
+309,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND mk.keyword_id>3287;"
+310,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=4412;
+311,job,SELECT * FROM cast_info ci WHERE ci.person_id<853690 AND ci.role_id=10;
+312,job,SELECT * FROM cast_info ci WHERE ci.person_id>539844 AND ci.role_id<8;
+313,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>2007 AND mk.keyword_id=72;"
+314,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.production_year>1987 AND mc.company_id=87859 AND mc.company_type_id=2 AND mi.info_type_id>5;"
+315,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year>2012 AND mk.keyword_id>15117;"
+316,job,SELECT * FROM movie_companies mc WHERE mc.company_id<86998 AND mc.company_type_id<2;
+317,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year=2002 AND mi_idx.info_type_id>100;"
+318,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>1 AND t.production_year=1982 AND mk.keyword_id=1272;"
+319,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year>1996;"
+320,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>2005 AND ci.role_id>1;"
+321,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=1 AND t.production_year=2006 AND ci.person_id>135569 AND ci.role_id<10;"
+322,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id>4 AND t.production_year>1991 AND mc.company_id<5173;"
+323,job,SELECT * FROM cast_info ci WHERE ci.person_id=1496180 AND ci.role_id<2;
+324,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=201;
+325,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.production_year=1968 AND mi_idx.info_type_id>100;"
+326,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year=1930 AND mi_idx.info_type_id<101 AND mk.keyword_id<498;"
+327,job,SELECT * FROM movie_companies mc WHERE mc.company_id=26328 AND mc.company_type_id<2;
+328,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>21063 AND mc.company_type_id=1;"
+329,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.production_year=2006 AND ci.person_id<2221102;"
+330,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id<2 AND t.production_year<1992;"
+331,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year=1979;"
+332,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=7 AND t.production_year>1963 AND mi.info_type_id>98;"
+333,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<83304;
+334,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<2 AND t.production_year<2013;"
+335,job,SELECT * FROM cast_info ci WHERE ci.person_id>2243948;
+336,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id=1 AND t.production_year=1976 AND mc.company_id<685 AND mc.company_type_id=1;"
+337,job,SELECT * FROM movie_companies mc WHERE mc.company_id=69176 AND mc.company_type_id<2;
+338,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id<7 AND t.production_year=1902 AND mi.info_type_id>13;"
+339,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>1993 AND mk.keyword_id<15084;"
+340,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id>6 AND mc.company_type_id=1;"
+341,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>1995 AND mi.info_type_id=8 AND mi_idx.info_type_id=100;"
+342,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.production_year>2004 AND mi.info_type_id<3;"
+343,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id<152822;"
+344,job,SELECT * FROM movie_companies mc WHERE mc.company_id<80168;
+345,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<7 AND t.production_year=1943 AND mi.info_type_id>17;"
+346,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id>2 AND ci.person_id=2690184 AND ci.role_id>1;"
+347,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id=735661;"
+348,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id<2686 AND mi_idx.info_type_id=100;"
+349,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year<2011 AND ci.role_id=1;"
+350,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year=2007 AND mk.keyword_id>16264;"
+351,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<8721;
+352,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=7 AND t.production_year<2010 AND ci.role_id>3;"
+353,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>3661;
+354,job,SELECT * FROM cast_info ci WHERE ci.person_id>791831;
+355,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.production_year>1952;"
+356,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=1 AND t.production_year>2009 AND ci.person_id=1628184;"
+357,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id<7 AND ci.person_id=2482947 AND ci.role_id>1;"
+358,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<4 AND t.production_year>2011 AND mi.info_type_id>16;"
+359,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<43265;
+360,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id>1 AND t.production_year=2010 AND mi_idx.info_type_id<100;"
+361,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>1938;"
+362,job,SELECT * FROM cast_info ci WHERE ci.person_id>1137052;
+363,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>1980 AND mi_idx.info_type_id=99;"
+364,job,SELECT * FROM movie_companies mc WHERE mc.company_id<75943 AND mc.company_type_id=2;
+365,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=7 AND ci.role_id=3;"
+366,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<2514;
+367,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.role_id=1 AND mi.info_type_id>2;"
+368,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.production_year=2008 AND mk.keyword_id<3434;"
+369,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id>494;"
+370,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year=2010 AND ci.person_id<1781410;"
+371,job,SELECT * FROM cast_info ci WHERE ci.person_id<3429318 AND ci.role_id>10;
+372,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id<7 AND t.production_year>1996 AND mc.company_id=331;"
+373,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.person_id=818104 AND mi.info_type_id<16;"
+374,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.kind_id>4 AND t.production_year>2004 AND mc.company_id<4714 AND mc.company_type_id>1;"
+375,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.person_id>1966598;"
+376,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id>1 AND mc.company_id>33322 AND mc.company_type_id=1;"
+377,job,SELECT * FROM cast_info ci WHERE ci.person_id>3038647;
+378,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.production_year<2012 AND ci.role_id>5;"
+379,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>2737348 AND ci.role_id=3;"
+380,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id=76048 AND mc.company_type_id>1;"
+381,job,SELECT * FROM cast_info ci WHERE ci.person_id>1936153 AND ci.role_id>1;
+382,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id<7 AND t.production_year>1976 AND ci.person_id=54577 AND ci.role_id>1;"
+383,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id<2 AND t.production_year>2006 AND mc.company_type_id=2;"
+384,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year<1992;"
+385,job,SELECT * FROM cast_info ci WHERE ci.person_id=2983511 AND ci.role_id>9;
+386,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND mk.keyword_id<44111;"
+387,job,SELECT * FROM cast_info ci WHERE ci.person_id<208799 AND ci.role_id=2;
+388,job,SELECT * FROM title t WHERE t.kind_id=4 AND t.production_year<2008;
+389,job,SELECT * FROM cast_info ci WHERE ci.person_id>1139578 AND ci.role_id=9;
+390,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year=1974 AND ci.person_id<543531;"
+391,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id>36706 AND mc.company_type_id=2 AND mk.keyword_id=5300;"
+392,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<2012 AND mk.keyword_id<6194;"
+393,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.person_id>1741807 AND mi.info_type_id>2;"
+394,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND ci.role_id>1 AND mk.keyword_id>19852;"
+395,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND t.production_year>2007 AND mk.keyword_id=3060;"
+396,job,SELECT * FROM cast_info ci WHERE ci.person_id<463908 AND ci.role_id=9;
+397,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id=480 AND mc.company_type_id=1;"
+398,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND ci.person_id<392746 AND ci.role_id>2 AND mk.keyword_id=1420;"
+399,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year=2000 AND ci.role_id<2;"
+400,job,SELECT * FROM cast_info ci WHERE ci.person_id<517434 AND ci.role_id=3;
+401,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mi_idx.info_type_id>99 AND mk.keyword_id>4333;"
+402,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND t.kind_id=4 AND mi.info_type_id>4;"
+403,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id>1 AND t.production_year>2011;"
+404,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mk.keyword_id<29124;"
+405,job,SELECT * FROM cast_info ci WHERE ci.person_id>2573477 AND ci.role_id>2;
+406,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND mk.keyword_id<7814;"
+407,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>1940;"
+408,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<28570;
+409,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.kind_id<7 AND t.production_year>1965 AND mc.company_id=160 AND mc.company_type_id>1 AND mi.info_type_id>108;"
+410,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id<2 AND ci.role_id<8;"
+411,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id>4 AND t.production_year>1957;"
+412,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id>3 AND t.production_year>2012;"
+413,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year<2010 AND mk.keyword_id<2565;"
+414,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id=1 AND t.production_year>2013 AND mc.company_id<133039 AND mc.company_type_id=1 AND ci.person_id>1040128 AND ci.role_id=5;"
+415,job,SELECT * FROM cast_info ci WHERE ci.person_id<3114560 AND ci.role_id<10;
+416,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id=86460;"
+417,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND t.production_year=1995 AND ci.role_id<5;"
+418,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id<1857593 AND mi_idx.info_type_id>101;"
+419,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year>2011 AND mk.keyword_id=245;"
+420,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id>1 AND t.production_year>1937 AND mi_idx.info_type_id>99;"
+421,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year>1962 AND mi_idx.info_type_id=101;"
+422,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id<4 AND t.production_year=2004 AND mi.info_type_id=2 AND mk.keyword_id<6043;"
+423,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year>2002 AND mi.info_type_id=8;"
+424,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.production_year<1991 AND mc.company_id>9557 AND mc.company_type_id=1 AND mi.info_type_id<2;"
+425,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id>3 AND mc.company_id<686 AND mc.company_type_id>1;"
+426,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mk.keyword_id=3344;"
+427,job,SELECT * FROM movie_companies mc WHERE mc.company_id<183711 AND mc.company_type_id<2;
+428,job,SELECT * FROM cast_info ci WHERE ci.person_id>429885 AND ci.role_id<4;
+429,job,"SELECT * FROM title t,movie_info_idx mi_idx WHERE t.id=mi_idx.movie_id AND t.production_year<1964 AND mi_idx.info_type_id<101;"
+430,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id<2501413 AND ci.role_id=10;"
+431,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year=1965 AND mi_idx.info_type_id>99;"
+432,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<53716;
+433,job,"SELECT * FROM title t,movie_companies mc,cast_info ci WHERE t.id=mc.movie_id AND t.id=ci.movie_id AND t.kind_id<7 AND t.production_year>1997 AND ci.person_id=2802626 AND ci.role_id>4;"
+434,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id>4 AND mk.keyword_id=7054;"
+435,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id<1838662 AND ci.role_id>1 AND mi_idx.info_type_id<100;"
+436,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=1 AND t.production_year<2009 AND ci.person_id=3229516;"
+437,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id<80891;"
+438,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<1837;
+439,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id=32374 AND mc.company_type_id=2;"
+440,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id<3368 AND mc.company_type_id=1;"
+441,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND ci.person_id<2092521 AND mk.keyword_id<16348;"
+442,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<2010 AND mk.keyword_id<3030;"
+443,job,"SELECT * FROM title t,cast_info ci,movie_info_idx mi_idx WHERE t.id=ci.movie_id AND t.id=mi_idx.movie_id AND ci.person_id>328006 AND ci.role_id>1;"
+444,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id=34475;"
+445,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.production_year>1973 AND mi.info_type_id=1;"
+446,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.production_year=1980 AND mc.company_id>6582;"
+447,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND mc.company_id=42773;"
+448,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id=27995;"
+449,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year=1987 AND mi_idx.info_type_id=101;"
+450,job,SELECT * FROM movie_companies mc WHERE mc.company_id<74151;
+451,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND ci.person_id>196958 AND ci.role_id=1;"
+452,job,SELECT * FROM movie_companies mc WHERE mc.company_id>43797 AND mc.company_type_id<2;
+453,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND mk.keyword_id>1078;"
+454,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=44301;
+455,job,SELECT * FROM cast_info ci WHERE ci.person_id=608733;
+456,job,SELECT * FROM cast_info ci WHERE ci.person_id<2839902;
+457,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year<1962 AND mk.keyword_id<217;"
+458,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<75971;
+459,job,SELECT * FROM movie_companies mc WHERE mc.company_id=533;
+460,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<12156;
+461,job,SELECT * FROM movie_companies mc WHERE mc.company_id>5044;
+462,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.production_year=2010 AND mc.company_id>216 AND mc.company_type_id=1;"
+463,job,"SELECT * FROM title t,cast_info ci,movie_info mi WHERE t.id=ci.movie_id AND t.id=mi.movie_id AND ci.role_id>5 AND mi.info_type_id=16;"
+464,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<37419;
+465,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.production_year<2009 AND ci.role_id>5;"
+466,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year<2001 AND mi_idx.info_type_id>100 AND mk.keyword_id<1753;"
+467,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id=1 AND t.production_year>2008 AND mi.info_type_id<7 AND mi_idx.info_type_id>100;"
+468,job,"SELECT * FROM title t,movie_info mi WHERE t.id=mi.movie_id AND t.kind_id<2 AND t.production_year<2003 AND mi.info_type_id>3;"
+469,job,SELECT * FROM movie_companies mc WHERE mc.company_id>11143 AND mc.company_type_id<2;
+470,job,SELECT * FROM cast_info ci WHERE ci.person_id>1674901 AND ci.role_id<6;
+471,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND t.kind_id=7 AND t.production_year<1948 AND mc.company_id<11147 AND mc.company_type_id=1;"
+472,job,SELECT * FROM cast_info ci WHERE ci.person_id>2254977 AND ci.role_id>5;
+473,job,SELECT * FROM cast_info ci WHERE ci.person_id=1978674 AND ci.role_id>1;
+474,job,"SELECT * FROM title t,movie_info mi,movie_keyword mk WHERE t.id=mi.movie_id AND t.id=mk.movie_id AND mi.info_type_id=4 AND mk.keyword_id>1947;"
+475,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND mc.company_id>312;"
+476,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id>5876 AND mk.keyword_id<3833;"
+477,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id>19118;
+478,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND mi_idx.info_type_id>100 AND mk.keyword_id>59920;"
+479,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND t.production_year<2011 AND mk.keyword_id<1582;"
+480,job,"SELECT * FROM title t,movie_companies mc,movie_info_idx mi_idx WHERE t.id=mc.movie_id AND t.id=mi_idx.movie_id AND t.kind_id>3 AND mc.company_id>45379 AND mc.company_type_id=1;"
+481,job,"SELECT * FROM title t,cast_info ci,movie_keyword mk WHERE t.id=ci.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year=2010 AND mk.keyword_id<130554;"
+482,job,"SELECT * FROM title t,movie_info mi,movie_info_idx mi_idx WHERE t.id=mi.movie_id AND t.id=mi_idx.movie_id AND t.kind_id<7 AND t.production_year>2011 AND mi.info_type_id=15 AND mi_idx.info_type_id>99;"
+483,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id<4 AND t.production_year=1946;"
+484,job,SELECT * FROM cast_info ci WHERE ci.person_id<2337114 AND ci.role_id>10;
+485,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.production_year>2007 AND mk.keyword_id<3078;"
+486,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id<7 AND t.production_year>1997 AND mk.keyword_id=13056;"
+487,job,"SELECT * FROM title t,movie_companies mc,movie_info mi WHERE t.id=mc.movie_id AND t.id=mi.movie_id AND t.production_year<2007 AND mi.info_type_id>15;"
+488,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND mc.company_id=79869;"
+489,job,"SELECT * FROM title t,movie_companies mc,movie_keyword mk WHERE t.id=mc.movie_id AND t.id=mk.movie_id AND mc.company_id<11713 AND mk.keyword_id>11399;"
+490,job,SELECT * FROM movie_companies mc WHERE mc.company_id=16;
+491,job,SELECT * FROM movie_companies mc WHERE mc.company_id=131454;
+492,job,SELECT * FROM cast_info ci WHERE ci.person_id=3518182;
+493,job,"SELECT * FROM title t,cast_info ci WHERE t.id=ci.movie_id AND t.kind_id=7 AND t.production_year<2012 AND ci.role_id>7;"
+494,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.kind_id<7 AND t.production_year=1994;"
+495,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id=2740;
+496,job,SELECT * FROM cast_info ci WHERE ci.person_id<1644221 AND ci.role_id=2;
+497,job,"SELECT * FROM title t,movie_info_idx mi_idx,movie_keyword mk WHERE t.id=mi_idx.movie_id AND t.id=mk.movie_id AND t.production_year<2000 AND mk.keyword_id=1046;"
+498,job,"SELECT * FROM title t,movie_keyword mk WHERE t.id=mk.movie_id AND t.kind_id=7 AND mk.keyword_id=230;"
+499,job,"SELECT * FROM title t,movie_companies mc WHERE t.id=mc.movie_id AND t.production_year=1975 AND mc.company_id<13351;"
+500,job,SELECT * FROM movie_keyword mk WHERE mk.keyword_id<13189;
