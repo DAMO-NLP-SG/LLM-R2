@@ -1,7 +1,7 @@
 
 <div align="center">
 
-**LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency**
+##LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency
 
 ------
 
