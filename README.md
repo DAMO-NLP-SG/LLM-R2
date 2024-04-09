@@ -24,7 +24,9 @@
 ## Installation
 
 **PostgreSQL requirement: PostgreSQL 14.4**
+
 **Java requirement: JDK>=11**
+
 **Python requirement: Python>=3.8**
 
 Before running the project, install the Python dependencies by:
@@ -34,7 +36,10 @@ Before running the project, install the Python dependencies by:
 ## Datasets
 
 We used three datasets in this work and you can download the datasets from the following links:
+
 **TPC-H:** https://github.com/gregrahn/tpch-kit
+
 **IMDB:** https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2QYZBT
+
 **DSB:** https://github.com/microsoft/dsb
 
