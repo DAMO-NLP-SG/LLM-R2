@@ -2,16 +2,14 @@
 <div align="center">
 
 **LLM-R2: A Large Language Model Enhanced Rule-based Rewrite System for Boosting Query Efficiency**
-<p align="center" width="100%">
-  <a href="https://arxiv.org/abs/2404.12872">Paper</a>
-<p>
-------
+------------------------------------------------------------------------------------------------------
 
 <p align="center">
   <a href="#Overview">Overview</a> •
   <a href="#Installation">Installation</a> •
   <a href="#Datasets">Datasets</a> •
   <a href="#Training and inference">Training and inference</a> •
+  <a href="https://arxiv.org/abs/2404.12872">Paper</a>
 </p>
 
 </div>
