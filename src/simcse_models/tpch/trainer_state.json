@@ -1,0 +1,37 @@
+{
+  "best_metric": 0.5276501136579339,
+  "best_model_checkpoint": "simcse_result/sup-train-42-8-0",
+  "epoch": 3.0,
+  "global_step": 486,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.77,
+      "eval_stsb_spearman": 0.5276501136579339,
+      "step": 125
+    },
+    {
+      "epoch": 1.54,
+      "eval_stsb_spearman": 0.5276501136579339,
+      "step": 250
+    },
+    {
+      "epoch": 2.31,
+      "eval_stsb_spearman": 0.5276501136579339,
+      "step": 375
+    },
+    {
+      "epoch": 3.0,
+      "step": 486,
+      "train_runtime": 1386.8767,
+      "train_samples_per_second": 0.35
+    }
+  ],
+  "max_steps": 486,
+  "num_train_epochs": 3,
+  "total_flos": 0,
+  "trial_name": null,
+  "trial_params": null
+}

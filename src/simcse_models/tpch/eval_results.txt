@@ -1,0 +1,2 @@
+epoch = 3.0
+eval_stsb_spearman = 0.5276501136579339
