@@ -11,7 +11,7 @@ from openai import OpenAI
 # import tiktoken
 client = OpenAI(
     # This is the default and can be omitted
-    api_key="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"
+    api_key="your_api_key"
 )
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
