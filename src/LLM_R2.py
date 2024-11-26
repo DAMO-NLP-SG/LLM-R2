@@ -35,7 +35,7 @@ pre_lang_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 model = QueryformerForCL()
 model_name = 'tpch'
-checkpoint = torch.load('simcse_result/' + model_name + '/pytorch_model.bin', map_location=torch.device('cpu'))
+checkpoint = torch.load('simcse_models/' + model_name + '/pytorch_model.bin', map_location=torch.device('cpu'))
 model.load_state_dict(checkpoint, strict=False)
 model.eval()
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
